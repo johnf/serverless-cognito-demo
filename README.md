@@ -41,3 +41,15 @@ sls deploy
 * Click on */hello*
 * You should see the method is protected by the cognito pool as per ![Pool](images/method.png)
 
+## Cleanup
+
+Bring down the stack
+```
+sls remove
+```
+
+Delete the pool, you need to pass in the ID. The bit at the end of the ARN.
+
+```
+bin/delete_user_pool us-east-1_XX
+```
