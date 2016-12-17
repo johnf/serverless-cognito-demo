@@ -34,8 +34,10 @@ sls deploy
 ## Verify
 
 * Browse to https://console.aws.amazon.com/apigateway/home?region=us-east-1#/apis
-* Click on dev-serverless-cognito-demo
-* Click on Authorizers
+* Click on *dev-serverless-cognito-demo*
+* Click on *Authorizers*
 * You should see an authorizer configured as per ![Authorizer](images/authorizer.png)
-
+* Click on *Resources*
+* Click on */hello*
+* You should see the method is protected by the cognito pool as per ![Pool](images/method.png)
 
