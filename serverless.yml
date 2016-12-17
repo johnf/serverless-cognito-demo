@@ -1,0 +1,19 @@
+service: serverless-cognito-demo
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-east-1
+  profile: echohub
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+          integration: lambda
+          authorizer:
+            name: authorizer
+            arn: arn:aws:cognito-idp:us-east-1:123456789:userpool/us-east-1_XXXXXX
+            claims:
+              - email
