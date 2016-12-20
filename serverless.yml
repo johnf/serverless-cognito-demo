@@ -1,9 +1,10 @@
 service: serverless-cognito-demo
+
 provider:
   name: aws
   runtime: nodejs4.3
   region: us-east-1
-  profile: echohub
+
 functions:
   hello:
     handler: handler.hello
