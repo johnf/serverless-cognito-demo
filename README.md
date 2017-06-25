@@ -1,3 +1,7 @@
+# NOTE: This was a demo for a pull request into serverless.
+
+If you are wondering what you need to do client side, check out https://github.com/aws/amazon-cognito-identity-js
+
 # Serverless Test
 
 This testing assume that you have default AWS credentials set up in ~/.aws or
